@@ -1,14 +1,24 @@
-#include "holberton.h"
-#include <unistd.h>
+#include "main.h"
 
 /**
- * _putchar - writes the character c to stdout
- *The character to print
+ * main - check the code.
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * Program that prints Holberton, followed by a new line
+ *
+ * Return: always 0 (success)
  */
-int _putchar(char c)
+
+int main(void)
 {
-	return (write(1, &c, 1));
+	char s[] = "_putchar";
+	int i = 0;
+
+	while (s[i] != '\0')
+	{
+		_putchar(s[i]);
+		i++;
+	}
+	_putchar(10);
+
+	return (0);
 }
