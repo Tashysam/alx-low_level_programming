@@ -1,18 +1,21 @@
-#include <stdio.h>
 #include "holberton.h"
 
 /**
- * print_alphabet - main function
- * Description: function to print alphabet
- * Return: 0
+ * print_alphabet - check the code for Holberton School students.
+ *
+ * Return: Always 0.
  */
+
 void print_alphabet(void)
 {
-	char alph;
+	char alp = 'a';
 
-	for (alph = 'a'; alph <= 'z'; alph++)
+	while (alp <= 'z')
 	{
-		_putchar(alph);
+		_putchar (alp);
+		alp++;
+
 	}
-	_putchar('\n');
+	_putchar ('\n');
+
 }
