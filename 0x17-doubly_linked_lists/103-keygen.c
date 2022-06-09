@@ -49,4 +49,5 @@ password[5] = codex[(tmp ^ 229) & 63];
 
 password[6] = '\0';
 printf("%s", password);
-return 
+return (0);
+}
